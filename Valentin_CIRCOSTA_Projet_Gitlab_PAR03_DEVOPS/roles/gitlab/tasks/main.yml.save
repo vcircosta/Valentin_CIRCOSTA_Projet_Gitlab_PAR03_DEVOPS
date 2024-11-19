@@ -1,0 +1,52 @@
+- name: Add GitLab GPG key
+  apt_key:
+    url: https://packages.gitlab.com/gpg.key
+    state: present
+
+- name: Add GitLab package repository
+  apt_repository:
+    repo: "deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu focal main"
+    state: present
+
+- name: Install GitLab
+  apt:
+    name: gitlab-ce
+    state: present
+
+- name: Reconfigure GitLab
+  command: gitlab-ctl reconfigure
+1~- name: Add GitLab GPG key
+  apt_key:
+    url: https://packages.gitlab.com/gpg.key
+    state: present
+
+- name: Add GitLab package repository
+  apt_repository:
+    repo: "deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu focal main"
+    state: present
+
+- name: Install GitLab
+  apt:
+    name: gitlab-ce
+    state: present
+
+- name: Reconfigure GitLab
+  command: gitlab-ctl reconfigure
+1~- name: Add GitLab GPG key
+  apt_key:
+    url: https://packages.gitlab.com/gpg.key
+    state: present
+
+- name: Add GitLab package repository
+  apt_repository:
+    repo: "deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu focal main"
+    state: present
+
+- name: Install GitLab
+  apt:
+    name: gitlab-ce
+    state: present
+
+- name: Reconfigure GitLab
+  command: gitlab-ctl reconfigure
+

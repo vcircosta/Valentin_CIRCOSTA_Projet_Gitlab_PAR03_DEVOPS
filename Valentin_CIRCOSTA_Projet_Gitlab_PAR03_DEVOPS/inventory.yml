@@ -1,0 +1,14 @@
+all:
+  children:
+    gitlab:
+      hosts:
+        192.168.23.128:
+          ansible_user: root
+          ansible_python_interpreter: /usr/bin/python3
+    database:
+      hosts:
+        192.168.23.128:
+          ansible_user: root
+          ansible_python_interpreter: /usr/bin/python3
+
+

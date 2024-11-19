@@ -1,0 +1,5 @@
+packages:
+- name: apt-transport-https
+- name: curl
+- name: net-tools
+- name: dnsutils

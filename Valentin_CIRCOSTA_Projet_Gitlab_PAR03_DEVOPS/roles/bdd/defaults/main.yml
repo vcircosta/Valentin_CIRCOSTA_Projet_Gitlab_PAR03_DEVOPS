@@ -1,0 +1,4 @@
+packages_postgresql:
+  - name: postgresql
+  - name: postgresql-contrib
+  - name: python3-psycopg2
